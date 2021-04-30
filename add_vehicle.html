@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add vehicle to database</title>
+    </head>
+    <body>
+        <h1>Add a vehicle to the database</h1>
+        <form method="POST" action="addvehicle.php">
+            <p>Vehicle registration </p><input type="text" name="reg_no" />
+            <p>Brand </p><input type="text" name="brand" />
+            <p>Daily rate &#163;</p><input type="number" name="daily_rate" />
+            <p>Type of vehicle</p>
+            <input type="radio" id="car" value="car" name="type_of_vehicle" />
+            <label for="car">Car</label><br>
+            <input type="radio" id="truck" value="truck" name="type_of_vehicle" />
+            <label for="truck">Truck</label><br>
+            <input type="hidden" name="submitted" value="true" />
+            <input type="submit" />
+            <input type="reset" />
+        </form>
+    </body>
+</html>
